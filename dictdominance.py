@@ -34,23 +34,23 @@ def isGreaterThan(dict1,dict2):
 				similar_key_dict1[i] = dict1[i]
 				similar_key_dict2[j] = dict2[j]
 
+	# print(similar_key_dict1,similar_key_dict2)
+
 
 	if bool(similar_key_dict1) == False and bool(similar_key_dict2) == False:
 		status = False
 
 
-
-
-	for k in similar_key_dict1.values():
-		for n in similar_key_dict2.values():
-			if k > n :
-				status = True
-
+	for k,n in zip(similar_key_dict1.values(),similar_key_dict2.values()):
+		print(k,n)
+		if k > n :
+			print(k,n)
+			status = True
 
 
 	return status
 			
 
 
-print(isGreaterThan({'a':1,'b':0, 'c': 0},{'a':0,'b':1}))
+print(isGreaterThan({'a':1,'b':2},{'a':1,'b':3}))
 # print(isGreaterThan({'a':1,'b':0},{'c': 0}))
