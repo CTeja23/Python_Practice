@@ -5,7 +5,6 @@
 
 def get_strings(l):
 	string = ""
-	temp_l = []
 	for i in l:
 		if type(i) is list:
 			string += '['+str(get_strings(i))+']'

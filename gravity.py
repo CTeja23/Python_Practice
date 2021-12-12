@@ -23,3 +23,9 @@ def freeFall(val,isD):
 
 print(freeFall(1,True))
 print(freeFall(0.45,False))
+
+
+
+
+
+
