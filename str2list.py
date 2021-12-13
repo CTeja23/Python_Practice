@@ -18,7 +18,6 @@ def str2list(l):
 		else:
 			stack[-1].append(i)
 
-
 	stack = stack.pop()
 
 	return stack[0]
